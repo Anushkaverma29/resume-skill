@@ -1,0 +1,157 @@
+/* --- Professional Indigo & Slate Theme --- */
+:root {
+    --primary-color: #4f46e5;    /* Indigo */
+    --primary-hover: #4338ca;
+    --secondary-color: #64748b;  /* Slate */
+    --success-bg: #dcfce7;
+    --success-text: #166534;
+    --danger-bg: #fee2e2;
+    --danger-text: #991b1b;
+    --warning-bg: #fef3c7;
+    --warning-text: #92400e;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Base Styles --- */
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--bg-light);
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: #1e293b; /* Deep Slate Header */
+    color: var(--white);
+    padding: 70px 0;
+    margin-bottom: -50px; /* Overlap effect for cards */
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+/* --- Card Styling --- */
+.card {
+    border: none;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Inputs & Textarea --- */
+.form-label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+    outline: none;
+}
+
+/* --- Button Styling --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.4);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.5);
+}
+
+/* --- Results Section --- */
+.score-display {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.border-end {
+    border-right: 2px solid #f1f5f9 !important;
+}
+
+/* --- Progress Bar --- */
+.progress {
+    height: 12px;
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 999px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* --- Skill Badges --- */
+.skill-badge {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 4px;
+    border: 1px solid transparent;
+}
+
+.badge-matched {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+    border-color: #bbf7d0;
+}
+
+.badge-missing {
+    background-color: var(--danger-bg);
+    color: var(--danger-text);
+    border-color: #fecaca;
+}
+
+.recommendation-container {
+    background-color: var(--bg-light);
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .border-end {
+        border-right: none !important;
+        border-bottom: 2px solid #f1f5f9 !important;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+}
