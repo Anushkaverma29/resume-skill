@@ -1,4 +1,4 @@
-# Resume Skill Extractor & Job Matcher 🚀
+# Resume Skill Extractor & Job Matcher 
 
 ## About the Project
 
